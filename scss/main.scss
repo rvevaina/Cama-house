@@ -1,0 +1,163 @@
+//Homepage
+
+header{
+  background: url("../images/home-page.jpg") no-repeat fixed center;
+  background-size: cover;
+  position: relative;
+  .container{
+    background-color: rgba(0,0,0,0.2);
+    transition: all 0.5s ease-in-out;
+    &.active{
+      background-color: rgba(0,0,0,0.5);
+    }
+    .header-content{
+      margin-top: 50%;
+      h1{
+        background: rgba(255, 255, 255, 0.8);
+        padding: 5%;
+        text-align: center;
+        border: 1px solid grey;
+        text-transform: uppercase;
+        font-weight: bold;
+        border: 1px solid darkred;
+      }
+      &:hover{
+        h1{
+          background: rgba(153,0,0, 0.7);
+          color: white;
+        }
+      }
+      img.arrow{
+        margin: auto;
+        display: block;
+        position: fixed;
+        bottom: 5%;
+        left: 48%;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.main{
+  background: #f2f2f2;
+  .panels{
+    h1{
+      text-align: center;
+      color: white;
+      text-transform: uppercase;
+      margin: 15% auto;
+      font-size: 5rem;
+      transition: all 0.5s ease-in;
+    }
+    .about{
+      background: url("../images/homepage.jpg") no-repeat;
+      background-size: cover;
+      height: 420px;
+      margin-top: 8%;
+      margin-bottom: 3%;
+      h1{
+        width: 45%;
+      }
+      .caption{
+        position: absolute;
+        background: rgba(153,0,0,0.8);
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        transition: all 0.5s ease-in;
+      }
+      &:hover{
+        .caption{
+          background: rgba(153,0,0,0.3);
+          h1{
+            font-size: 5.5rem;
+            color: rgb(153,0,0);
+            font-weight: bold;
+            background: rgba(255, 255, 255, 0.8);
+            margin: 15% auto;
+            width: 45%;
+          }
+        }
+      }
+    }
+    .history{
+      background: url("../images/history.jpg") no-repeat;
+      background-size: cover;
+      height: 420px;
+      margin-bottom: 3%;
+      h1{
+        width: 90%;
+      }
+      .caption{
+        position: absolute;
+        background: rgba(0,0,128, 0.7);
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        transition: all 0.5s ease-in;
+      }
+      &:hover{
+        .caption{
+          background: rgba(0,0,128,0.3);
+          h1{
+            font-size: 5.5rem;
+            color: rgb(0,0,128);
+            font-weight: bold;
+            background: rgba(255, 255, 255, 0.8);
+            margin: 15% auto;
+            width: 90%;
+          }
+        }
+      }
+    }
+    .contact{
+      background: url("../images/contact.jpg") no-repeat;
+      background-size: cover;
+      height: 420px;
+      margin-bottom: 6%;
+      h1{
+        width: 50%;
+      }
+      .caption{
+        position: absolute;
+        background:rgba(255,212,84, 0.7);
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        transition: all 0.5s ease-in;
+      }
+      &:hover{
+        .caption{
+          background: rgba(0,0,128,0.3);
+          h1{
+            font-size: 5.5rem;
+            color: rgb(0,0,128);
+            font-weight: bold;
+            background: rgba(255, 255, 255, 0.8);
+            margin: 15% auto;
+            width: 50%;
+          }
+        }
+      }
+    } //contact
+  } //panels
+} //main
+
+footer{
+  padding-top: 1%;
+  p{
+    font-size: 1.3rem;
+  }
+  ul{
+    list-style: none;
+    li{
+      display: inline;
+      padding-left: 7%;
+      font-size: 1.3rem;
+    }
+  }
+}
