@@ -1,3 +1,66 @@
+//Nav Bar
+
+.header-section {
+  -webkit-box-shadow: 0 0 5px 0 rgba(0,0,0,0.4);
+  box-shadow: 0 0 5px 0 rgba(0,0,0,0.4);
+  position: fixed;
+  z-index: 999;
+  min-width: 100%;
+}
+
+.contain-to-grid {
+  background-color: rgba(255, 255, 255, 0.97);
+}
+
+.full-width {
+  min-width: 100%;
+}
+
+//TOPBAR NAVGATION
+.top-bar {
+  background: none;
+  padding: 1rem 0.9375rem 3.5rem;
+  // LOGO ADJUSTMENT
+  ul.title-area li {
+    font-weight: bold;
+    font-size: 2.2em;
+    margin-top: -9px;
+  }
+  .top-bar-section ul {
+    background: none;
+    // MENU ITEM STYLES
+    li a:not(.button), li.active a:not(.button) {
+      background: rgba(255, 255, 255, 0.97);
+      line-height: 30px;
+      font-size: 12px;
+      padding: 0;
+      margin: 5px 0 0 0;
+      text-transform: uppercase;
+    }
+    // MENU ITEM HOVERS
+    li a:not(.button):hover {
+      background: rgba(255, 255, 255, 0.97);
+      border-bottom: 2px solid $primary-color;
+      color: #222;
+    }
+    // MENU ITEM ACTIVE
+    li.active a:not(.button) {
+      border-bottom: 2px solid $primary-color;
+      color: #222;
+      &:hover {
+        background: none;
+      }
+    }
+    li {
+      margin-left: 30px;
+      background-color: rgba(255, 255, 255, 0.97);
+      a {
+        color: #888;
+      }
+    }
+  }
+}
+
 //Homepage
 
 header{
@@ -75,7 +138,7 @@ header{
             font-size: 5.5rem;
             color: rgb(153,0,0);
             font-weight: bold;
-            background: rgba(255, 255, 255, 0.8);
+            background: rgba(255, 255, 255, 0.6);
             margin: 15% auto;
             width: 45%;
           }
@@ -106,7 +169,7 @@ header{
             font-size: 5.5rem;
             color: rgb(0,0,128);
             font-weight: bold;
-            background: rgba(255, 255, 255, 0.8);
+            background: rgba(255, 255, 255, 0.6);
             margin: 15% auto;
             width: 90%;
           }
@@ -137,7 +200,7 @@ header{
             font-size: 5.5rem;
             color: rgb(0,0,128);
             font-weight: bold;
-            background: rgba(255, 255, 255, 0.8);
+            background: rgba(255, 255, 255, 0.6);
             margin: 15% auto;
             width: 50%;
           }
@@ -157,7 +220,7 @@ footer{
     li{
       display: inline;
       padding-left: 7%;
-      font-size: 1.3rem;
+      font-size: 1rem;
     }
   }
 }
