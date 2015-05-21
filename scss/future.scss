@@ -1,37 +1,98 @@
 .main {
   background: #f2f2f2;
-  .future {
-    width: 50.35%;
-    height: auto;
-    margin-bottom: 3%;
-    position: relative;
-    img{
-      width: 100%;
+    .future {
+      width: 64%;
       height: auto;
+      margin-bottom: 3%;
+      position: relative;
+      img{
+        width: 100%;
+        height: auto;
+      }
+      .image{
+        -webkit-clip-path: polygon(5% 100%, 5% 0%, 60% 0%, 100% 100%);
+        clip-path: polygon(5% 100%, 5% 0%, 60% 0%, 100% 100%);
+        position: absolute;
+        z-index: 100;
+        left: -5%;
+        width: 100%;
+        &:hover{
+          .overlay {
+            background: none;
+          }
+          h1.title{
+            background: rgba(255, 255, 255, 0.9);
+          }
+        }
+        .overlay {
+          position: absolute;
+          background: rgba(0,0,0, 0.2);
+          left: 0;
+          top: 0;
+          height: 100%;
+          width: 100%;
+          transition: all 0.5s ease-in;
+        }
+      }
+      .clip-svg {
+        width: 0;
+        height: 0;
+      }
+      h1.title{
+        position: absolute;
+        z-index: 101;
+        margin: 31% 20%;
+        color: black;
+        text-transform: uppercase;
+        font-size: 4rem;
+        background: rgba(255, 255, 255, 0.8);
+        PADDING: 0 2%;
+      }
     }
-    .clip-svg {
-      width: 0;
-      height: 0;
-    }
-    .polygon-clip-trapezoid {
-      -webkit-clip-path: polygon(30% 100%, 30% 0%, 60% 0%, 100% 100%);
-      clip-path: polygon(30% 100%, 30% 0%, 60% 0%, 100% 100%);
-      -webkit-clip-path: url("#polygon-clip-trapezoid");
-      clip-path: url("#polygon-clip-trapezoid");
-      left: 51%;
+    .construction{
       position: absolute;
-      z-index: 100;
-    }
-  }
-  .construction{
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 50%;
-    height: auto;
-    img{
-      width: 100%;
+      right: 0;
+      top: 0;
+      width: 63.6%;
       height: auto;
+      &:hover{
+        .overlay {
+          background: none;
+        }
+        h1.title{
+          background: rgba(255, 255, 255, 0.9);
+        }
+      }
+      .overlay {
+        position: absolute;
+        background: rgba(0,0,0, 0.2);
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        transition: all 0.5s ease-in;
+      }
+      img{
+        width: 100%;
+        height: auto;
+      }
+      h1.title{
+        position: absolute;
+        z-index: 101;
+        margin: -34% 48%;
+        color: black;
+        text-transform: uppercase;
+        font-size: 4rem;
+        background: rgba(255, 255, 255, 0.8);
+        PADDING: 0 2%;
+      }
+    }
+  .text{
+    .history-text{
+      margin-top: 68%;
+    }
+    .history-text, .future-text{
+      margin-bottom: 5%;
     }
   }
 }
