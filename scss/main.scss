@@ -1,3 +1,14 @@
+body{
+  background: url("../images/concrete_background.png");
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Ubuntu', sans-serif;
+}
+
+p, a{
+  font-family: 'Helvetica Neue';
+}
 //Nav Bar
 
 .header-section {
@@ -25,6 +36,7 @@
     font-weight: bold;
     font-size: 2.2em;
     margin-top: -9px;
+    font-family: 'Ubuntu', sans-serif;
   }
   .top-bar-section ul {
     background: none;
@@ -77,12 +89,12 @@ header{
       margin-top: 50%;
       h1{
         background: rgba(255, 255, 255, 0.8);
-        padding: 5%;
+        padding: 4%;
         text-align: center;
         border: 1px solid grey;
         text-transform: uppercase;
-        font-weight: bold;
         border: 1px solid darkred;
+        font-size: 3rem;
       }
       &:hover{
         h1{
@@ -102,29 +114,102 @@ header{
   }
 }
 
-.main{
-  background: #f2f2f2;
+.header-main{
   .panels{
     h1{
       text-align: center;
       color: white;
       text-transform: uppercase;
-      margin: 15% auto;
+      margin: 12% auto;
       font-size: 5rem;
       transition: all 0.5s ease-in;
+    }
+    .top-row{
+      margin-top: 6%;
+      h1{
+        margin: 26% auto;
+        font-size: 3rem;
+      }
     }
     .about{
       background: url("../images/about.jpg") no-repeat;
       background-size: cover;
-      height: 420px;
-      margin-top: 8%;
+      height: 330px;
+      width: 48%;
+      margin-right: 2%;
       margin-bottom: 3%;
+      position: relative;
+      float: left;
       h1{
         width: 45%;
       }
       .caption{
         position: absolute;
-        background: rgba(153,0,0,0.8);
+        background: rgba(0,0,128, 0.6);
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        transition: all 0.5s ease-in;
+      }
+      &:hover{
+        .caption{
+          background: rgba(0,0,128,0.3);
+          h1{
+            font-size: 3.5rem;
+            color: rgb(0,0,128);
+            font-weight: bold;
+            background: rgba(255, 255, 255, 0.6);
+            width: 50%;
+          }
+        }
+      }
+    }
+    .history{
+      background: url("../images/history.jpg") no-repeat;
+      background-size: cover;
+      height: 330px;
+      margin-bottom: 3%;
+      width: 48%;
+      margin-left: 2%;
+      position: relative;
+      float: left;
+      h1{
+        width: 90%;
+      }
+      .caption{
+        position: absolute;
+        background: rgba(0,0,128, 0.6);
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        transition: all 0.5s ease-in;
+      }
+      &:hover{
+        .caption{
+          background: rgba(0,0,128,0.3);
+          h1{
+            font-size: 3rem;
+            color: rgb(0,0,128);
+            font-weight: bold;
+            background: rgba(255, 255, 255, 0.6);
+            width: 95%;
+          }
+        }
+      }
+    }
+    .contact{
+      background: url("../images/contact.jpg") no-repeat;
+      background-size: cover;
+      height: 350px;
+      margin-bottom: 6%;
+      h1{
+        width: 50%;
+      }
+      .caption{
+        position: absolute;
+        background:rgba(153,0,0, 0.6);
         left: 0;
         top: 0;
         height: 100%;
@@ -136,73 +221,11 @@ header{
           background: rgba(153,0,0,0.3);
           h1{
             font-size: 5.5rem;
-            color: rgb(153,0,0);
+            color: darkred;
             font-weight: bold;
             background: rgba(255, 255, 255, 0.6);
-            margin: 15% auto;
-            width: 45%;
-          }
-        }
-      }
-    }
-    .history{
-      background: url("../images/history.jpg") no-repeat;
-      background-size: cover;
-      height: 420px;
-      margin-bottom: 3%;
-      h1{
-        width: 90%;
-      }
-      .caption{
-        position: absolute;
-        background: rgba(0,0,128, 0.7);
-        left: 0;
-        top: 0;
-        height: 100%;
-        width: 100%;
-        transition: all 0.5s ease-in;
-      }
-      &:hover{
-        .caption{
-          background: rgba(0,0,128,0.3);
-          h1{
-            font-size: 5.5rem;
-            color: rgb(0,0,128);
-            font-weight: bold;
-            background: rgba(255, 255, 255, 0.6);
-            margin: 15% auto;
-            width: 90%;
-          }
-        }
-      }
-    }
-    .contact{
-      background: url("../images/contact.jpg") no-repeat;
-      background-size: cover;
-      height: 420px;
-      margin-bottom: 6%;
-      h1{
-        width: 50%;
-      }
-      .caption{
-        position: absolute;
-        background:rgba(255,212,84, 0.7);
-        left: 0;
-        top: 0;
-        height: 100%;
-        width: 100%;
-        transition: all 0.5s ease-in;
-      }
-      &:hover{
-        .caption{
-          background: rgba(0,0,128,0.3);
-          h1{
-            font-size: 5.5rem;
-            color: rgb(0,0,128);
-            font-weight: bold;
-            background: rgba(255, 255, 255, 0.6);
-            margin: 15% auto;
-            width: 50%;
+            margin: 12% auto;
+            width: 48%;
           }
         }
       }
@@ -210,17 +233,65 @@ header{
   } //panels
 } //main
 
+//About
+
+.introduction{
+  margin-top: 15%;
+}
+.founders{
+  margin-bottom: 8%;
+  h1{
+    margin: 6% 0;
+  }
+  .description{
+    padding-top: 0;
+  }
+  .founder1{
+    padding-bottom: 5%;
+    border-bottom: 1px dashed grey;
+    margin-bottom: 5%;
+  }
+}
+
+//Contact
+
+.contact-information{
+  margin-top: 15%;
+  margin-bottom: 10%;
+  h2{
+    margin-bottom: 5%;
+  }
+  .map{
+    #map-canvas {
+      height: 400px;
+      background-color: rgb(229, 227, 223);
+    }
+    margin-bottom: 5%;
+  }
+  .information{
+    float: right;
+    p{
+      margin-bottom: 0.5rem;
+    }
+  }
+}
+
 footer{
-  padding-top: 1%;
+  padding-top: 1.1%;
+  background-color: rgba(255,255,255,0.97);
   p{
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
   ul{
     list-style: none;
+    margin-top: 0.2%;
     li{
       display: inline;
       padding-left: 7%;
-      font-size: 1rem;
+      font-size: 0.8rem;
+      a{
+        text-transform: uppercase;
+      }
     }
   }
 }

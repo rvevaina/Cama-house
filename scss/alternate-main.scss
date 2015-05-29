@@ -1,0 +1,106 @@
+.header-main{
+  .panels1{
+    h1{
+      text-align: center;
+      color: white;
+      text-transform: uppercase;
+      margin: 12% auto;
+      font-size: 5rem;
+      transition: all 0.5s ease-in;
+    }
+    .about1{
+      background: url("../images/about.jpg") no-repeat;
+      background-size: cover;
+      height: 350px;
+      margin-top: 6%;
+      margin-bottom: 3%;
+      h1{
+        width: 45%;
+      }
+      .caption{
+        position: absolute;
+        background: rgba(153,0,0,0.6);
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        transition: all 0.5s ease-in;
+      }
+      &:hover{
+        .caption{
+          background: rgba(153,0,0,0.3);
+          h1{
+            font-size: 5.5rem;
+            color: rgb(153,0,0);
+            font-weight: bold;
+            background: rgba(255, 255, 255, 0.5);
+            margin: 12% auto;
+            width: 40%;
+          }
+        }
+      }
+    }
+    .history1{
+      background: url("../images/history.jpg") no-repeat;
+      background-size: cover;
+      height: 350px;
+      margin-bottom: 3%;
+      h1{
+        width: 90%;
+      }
+      .caption{
+        position: absolute;
+        background: rgba(0,0,128, 0.6);
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        transition: all 0.5s ease-in;
+      }
+      &:hover{
+        .caption{
+          background: rgba(0,0,128,0.3);
+          h1{
+            font-size: 5.5rem;
+            color: rgb(0,0,128);
+            font-weight: bold;
+            background: rgba(255, 255, 255, 0.5);
+            margin: 12% auto;
+            width: 86%;
+          }
+        }
+      }
+    }
+    .contact1{
+      background: url("../images/contact.jpg") no-repeat;
+      background-size: cover;
+      height: 350px;
+      margin-bottom: 6%;
+      h1{
+        width: 50%;
+      }
+      .caption{
+        position: absolute;
+        background:rgba(255,212,84, 0.6);
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        transition: all 0.5s ease-in;
+      }
+      &:hover{
+        .caption{
+          background: rgba(255,212,84,0.3);
+          h1{
+            font-size: 5.5rem;
+            color: black;
+            font-weight: bold;
+            background: rgba(255, 255, 255, 0.5);
+            margin: 12% auto;
+            width: 48%;
+          }
+        }
+      }
+    } //contact
+  } //panels
+} //main

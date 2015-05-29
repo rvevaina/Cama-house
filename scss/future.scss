@@ -1,5 +1,4 @@
-.main {
-  background: #f2f2f2;
+
     .future {
       width: 64%;
       height: auto;
@@ -87,12 +86,12 @@
         PADDING: 0 2%;
       }
     }
-  .text{
-    .history-text{
-      margin-top: 68%;
+    .main {
+      background: #f2f2f2;
+      .text {
+        padding-top: 5%;
+        .history-text, .future-text {
+          margin-bottom: 3%;
+        }
+      }
     }
-    .history-text, .future-text{
-      margin-bottom: 5%;
-    }
-  }
-}

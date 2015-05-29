@@ -3,8 +3,9 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cama House</title>
+    <title>Cama Homes</title>
     <link rel="stylesheet" href="css/app.css" />
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,500,700' rel='stylesheet' type='text/css'>
     <script src="bower_components/modernizr/modernizr.js"></script>
   </head>
   <body>
@@ -17,7 +18,7 @@
         <!-- TITLE AREA & LOGO -->
         <ul class="title-area">
           <li class="name">
-            Cama House
+            Cama Homes
           </li>
           <li class="toggle-topbar menu-icon"><a href="#"><span>menu</span></a></li>
         </ul> <!-- END TITLE AREA & LOGO -->
@@ -25,10 +26,10 @@
         <!-- MENU ITEMS -->
         <section class="top-bar-section">
           <ul class="right">
-            <li class="active"><a href="index.php">Home</a></li>
-            <li><a href="blog.php">About Us</a></li>
-            <li><a href="#">History/Future</a></li>
-            <li><a href="#">Contact</a></li>
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="history.html">History/Future</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </section> <!-- END MENU ITEMS -->
       </nav> <!-- END TOPBAR SECTION -->
@@ -39,50 +40,54 @@
       <div class="container full-height">
         <div class="row">
           <div class="large-10 large-offset-1 columns header-content">
-            <h1>Welcome to Cama House</h1>
+            <h1>Welcome to Cama Homes</h1>
             <img src="images/arrow.png" alt="" class="arrow"/>
           </div>
         </div>
       </div>
     </header>
 
-    <div class="main" id="main">
+    <div class="header-main" id="main">
       <div class="row panels">
-
-        <a href="#">
-          <div class="large-12 columns about">
-            <div class="caption">
-              <h1>About</h1>
-            </div>
-          </div>
-        </a>
-        <a href="#">
-          <div class="large-12 columns history">
-            <div class="caption">
-              <h1>History/Future</h1>
-            </div>
-          </div>
-        </a>
-        <a href="#">
-            <div class="large-12 columns contact">
+        <div class="top-row">
+          <a href="about.html">
+            <div class="about">
               <div class="caption">
-                <h1>Contact</h1>
+                <h1>About</h1>
               </div>
             </div>
-        </a>
+          </a>
+          <a href="history.html">
+            <div class="history">
+              <div class="caption">
+                <h1>History / Future</h1>
+              </div>
+            </div>
+          </a>
+        </div>  <!-- TOP ROW END -->
+
+          <a href="contact.html">
+              <div class="large-12 columns contact">
+                <div class="caption">
+                  <h1>Contact</h1>
+                </div>
+              </div>
+          </a>
       </div>
     </div>
 
-    <footer class="row">
-      <p class="large-4 columns">
-        © Copyright 2015 Cama House
-      </p>
-      <ul class="large-5 columns">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">History/Future</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
+    <footer>
+      <div class="row">
+        <p class="large-4 columns">
+          © Copyright 2015 Cama House
+        </p>
+        <ul class="large-5 columns">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="history.html">History/Future</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
     </footer>
 
 
