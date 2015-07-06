@@ -52,6 +52,42 @@ $('img.arrow').click(function () {
 });
 
 //***************************
+//History/Future Hover and scroll
+//***************************
+
+$("h1.history-title, .image").mouseover(function(){
+    $(".overlay").css("background", "none");
+    $("h1.history-title").css("background", "rgba(255,255,255, 0.9)");
+});
+
+$(".image, h1.history-title").mouseout(function(){
+    $(".overlay").css("background", "rgba(0,0,0, 0.2)");
+    $("h1.history-title").css("background", "rgba(255,255,255, 0.8)");
+});
+
+$("h1.construction-title, .construction").mouseover(function(){
+    $(".overlay-con").css("background", "none");
+    $("h1.construction-title").css("background", "rgba(255,255,255, 0.9)");
+});
+
+$("h1.construction-title, .construction").mouseout(function(){
+    $(".overlay-con").css("background", "rgba(0,0,0, 0.2)");
+    $("h1.construction-title").css("background", "rgba(255,255,255, 0.8)");
+});
+
+$('h1.history-title').click(function () {
+    $('html, body').animate({
+        scrollTop: $("#history").offset().top -100
+    }, 1200);
+});
+
+$('h1.construction-title').click(function () {
+    $('html, body').animate({
+        scrollTop: $("#future").offset().top -100
+    }, 1200);
+});
+
+//***************************
 //Map Initialization
 //***************************
 
